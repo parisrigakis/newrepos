@@ -1,1 +1,0 @@
-This is a README note for my first git pushed from bash.

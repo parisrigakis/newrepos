@@ -1,0 +1,213 @@
+<body>
+
+<header id="header"><img id="header-img"  src="https://visualpharm.com/assets/167/Mechanical%20Spring-595b40b85ba036ed117dd922.svg"/>
+  <h1>The Spring Market</h1>
+  <nav id="nav-bar">
+    <button><a class="nav-link" href="#features">Features</a></button>
+    <button><a class="nav-link" href="#how-it-works">How it's made</a></button>
+    <button><a class="nav-link" href="#contact">Subscribe</a></button>
+    </nav>
+</header>
+<br>
+  
+  <div class="contents"> <!-- Content Container -->
+      <section id="features"> <!-- Features Section -->
+        <div class="list"> <!-- Quality Feature -->
+          
+          <div class="discription">
+            <h2>Quality</h2>
+            <p>We want to provide our costumers with the best Springs in the market, and the only way to do this is by keeping the quality as high as possible. </p>
+          </div>
+        </div>
+        <div class="list"> <!-- Technology Feature -->
+          
+          <div class="discription">
+            <h2>Technology</h2>
+            <p>We build our springs with premium materials and use the latest manufacturing methods in order to achieve the best quality!</p>
+          </div>
+        </div>
+        <div class="list"> <!-- Customer Service Feature -->
+          
+          <div class="discription">
+            <h2>Customer Service</h2>
+            <p>In order to satisfy your needs we have a 24/7 costumer service where you can ask anything about our products</p>
+          </div>
+        </div>
+      </section>
+      <br>
+      
+      <section id="how-it-works"> <!-- How It Works Section -->
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/TXqkRXqPFhk" frameborder="0" allowfullscreen></iframe>
+      </section>
+      <br>
+   </div>
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <section id ="contact">
+  <div class="form-container"> <!-- Form Container -->
+      
+      <h2>Spring came earlier, with the Spring market's help</h2> <!-- Form Title -->
+      <p>Subscribe to our mailing list in order to follow our news feed!</p>
+      <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="Please enter your email:" required/>
+        <input id="submit" type="submit" value="Subscribe"/>
+      </form>
+  
+    </div>
+     </section>
+  
+</body>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+body{
+  background-color: rgb(100,100,100);
+  font-family: 'Francois One', sans-serif;
+  font-style: italic;
+  
+}
+#header-img{
+  padding: 10px;
+  width:70px;
+  height: 70px;
+  display: flex;
+  margin-left: 25px;
+}
+#header{
+  background-color: rgb(120,160,80);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+ 
+  padding: 0px 20px ;
+  display: flex;
+  align-items: center;
+  
+  z-index: 2;
+ 
+}
+ @media (max-width: 568px) {
+   #header{ flex-wrap: wrap;}
+   #nav-bar{
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  }
+
+#nav-bar {
+  padding: 3px;
+  margin-left: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.nav-link {
+  margin: 23px;
+  padding: 11px;
+  font-size: 19px;
+  color: rgb(0,0,0);
+
+}
+button {
+  margin: 11px;
+  padding: 7px;
+  background-color: rgb(120,160,80);
+  border: 3px solid rgb(0,0,0);
+  border-radius: 9px;
+  font-family: 'Francois One', sans-serif;
+  font-style: italic;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 127px;
+  margin-bottom: 23px;
+}
+  h2 {
+    margin-bottom: 7px;
+  }
+  p {
+    font-size: 19px;
+  }
+  #email {
+    display: flex;
+    text-align: center;
+    font-size: 19px;
+    margin: 13px;
+    width: 323px;
+    height: 27px;
+    border: 2px solid ;
+    border-radius: 9px;
+    font-family: 'Francois One', sans-serif;
+  font-style: italic;
+  }
+  #submit {
+    margin: 13px;
+    padding: 5px;
+    font-size: 19px;
+    background-color: rgb(120,160,80);
+    border: 2px solid ;
+    border-radius: 9px;
+    font-family: 'Francois One', sans-serif;
+  font-style: italic;
+     }
+    #submit:hover {
+      background-color: green;
+      transition: background-color 1s;
+    }
+ 
+.contents {
+  width: 100%;
+  margin: 0, auto;
+}
+#features {
+  margin-top: 100px;
+  padding: 23px;
+}
+  .list {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    }
+ 
+    
+   
+    
+
+    
+  .discription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+    
+    }
+
+#how-it-works {
+  display: flex;
+  margin-top: 71px;
+  justify-content: center;
+    iframe {
+      max-width: 560px;
+      width: 100%;
+    }
+} 
+</style>

@@ -1,0 +1,92 @@
+<div class="form-container"> <!-- Form Container -->
+      
+      <h1>Roman Numeral Converter</h1> <!-- Form Title -->
+      <p>Enter the number you want to convert to a Roman Numeral<br>
+			and click Convert to see the resutls!
+	</p>
+		
+      <div id="form" >
+        <input id="email" type="number" name="email" placeholder="Please enter your number:" required/>
+        <input id="submit" type = "button" value="Convert" onclick = "typeRoman()" />
+      </div>
+		<p id = "result">
+		</p>
+  
+</div>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+body{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(50,100,100);
+  font-family: 'Francois One', sans-serif;
+}
+ p {
+    font-size: 19px;
+	 margin-top: 30px;
+  }
+#result{
+	margin-top: 10px;
+	font-size: 30px;
+}
+ 
+#submit {
+    margin: 13px;
+    padding: 5px;
+    font-size: 19px;
+    background-color: rgb(80,80,160);
+    border: 2px solid ;
+    border-radius: 9px;
+    font-family: 'Francois One', sans-serif;
+ 
+     }
+    #submit:hover {
+      background-color: DarkBlue;
+      transition: background-color 1s;
+    }
+#email {
+    display: flex;
+    text-align: center;
+    font-size: 19px;
+    margin: 13px;
+    width: 323px;
+    height: 27px;
+    border: 2px solid ;
+    border-radius: 9px;
+    font-family: 'Francois One', sans-serif;
+  
+  }
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  margin-bottom: 23px;
+}
+</style>
+<script>
+function convertToRoman(num) {
+//Define an array of the roman symbols and an array matching their numeric values
+ const romanSymbols = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+ const numericValues = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+//Define a string which represents the roman number
+ let romanNumber = "";
+//Build the roman number
+ for (let i = 0; i < numericValues.length; i++){
+     while (num >= numericValues[i]){
+         romanNumber += romanSymbols[i];
+         num -= numericValues[i];
+     }
+ }
+//Return the string representing the roman number
+ return romanNumber;
+}
+function typeRoman(){
+	let num = document.getElementById("email").value;
+	document.getElementById("result").innerHTML = convertToRoman(num);
+}
+</script>

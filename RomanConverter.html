@@ -5,10 +5,10 @@
 			and click Convert to see the resutls!
 	</p>
 		
-      <div id="form" >
+      <form id="form" onsubmit = "typeRoman();return false" >
         <input id="email" type="number" name="email" placeholder="Please enter your number:" required/>
-        <input id="submit" type = "button" value="Convert" onclick = "typeRoman()" />
-      </div>
+        <input id="submit" type = "submit" value="Convert" />
+      </form>
 		<p id = "result">
 		</p>
   
@@ -66,6 +66,11 @@ body{
   text-align: center;
   
   margin-bottom: 23px;
+
+}
+#form{
+margin-bottom: 0px;
+
 }
 </style>
 <script>
